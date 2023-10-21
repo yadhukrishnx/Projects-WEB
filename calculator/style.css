@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    background: url(https://i.pinimg.com/originals/25/35/e9/2535e96f7c1a3fde96e364c2a95f06db.gif);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 400px;
+    
+    background-position-y :top ; 
+}
+.calculator{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(224, 53, 11, 0.915);
+    margin-top: 100px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.screen{
+    margin-top: 5px;
+    margin-left: 22px;
+    width:340px;
+    height:60px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    pointer-events: none;
+    
+
+}
+.footer{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#ot{
+
+    
+    width:340px;
+    height:55px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    pointer-events: none;
+    font-size: x-large;
+    font-weight: 200px;
+    text-align: right;
+    
+    
+}
+.btns{
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: 22px;
+    height: 350px;
+    
+    display: flex;
+    flex-direction: column  ;
+    justify-content:space-evenly;
+    padding-top: 10px;    
+}
+.sbox{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(74, 74, 74);
+    margin: 4px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+.sbox2{
+    width: 222px;
+    height: 55px;
+    background-color: burlywood;
+    margin: 4px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function btnclick(value)
+        {   
+            document.getElementById("ot").value+=value;
+        }
+        function cleard(){
+            document.getElementById("ot").value=null
+
+        }
+        function Author(){
+            document.getElementById("ot").value="Author : yadhukrishnx"
+
+        }
+        function equalclk(){
+            var text1=document.getElementById("ot").value;
+            var result=eval(text1);
+            document.getElementById("ot").value=result;
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="screen">
+               <input type="text" name="" id="ot">
+
+            </div>
+            <div class="btns">
+                <div class="row">
+                    <button type="button" class="sbox" onclick="cleard()">C</button>
+                    <button type="button" class="sbox" onclick="Author()">M</button>
+                    <button type="button" class="sbox" onclick="btnclick('%')">%</button>
+                    <button type="button" class="sbox" onclick="btnclick('*')">x</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="sbox" onclick="btnclick(7)">7</button>
+                    <button type="button" class="sbox" onclick="btnclick(8)">8</button>
+                    <button type="button" class="sbox" onclick="btnclick(9)">9</button>
+                    <button type="button" class="sbox" onclick="btnclick('/')">/</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="sbox" onclick="btnclick(4)">4</button>
+                    <button type="button" class="sbox" onclick="btnclick(5)">5</button>
+                    <button type="button" class="sbox" onclick="btnclick(6)">6</button>
+                    <button type="button" class="sbox" onclick="btnclick('-')">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="sbox" onclick="btnclick(1)">1</button>
+                    <button type="button" class="sbox" onclick="btnclick(2)">2</button>
+                    <button type="button" class="sbox" onclick="btnclick(3)">3</button>
+                    <button type="button" class="sbox" onclick="btnclick('+')">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="sbox" onclick="btnclick(0)">0</button>
+                    <button type="button" class="sbox2" onclick="equalclk()">=</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <marquee><code>©️This calculator is developed by : yadhukrishnx</code></marquee>
+        </div>
+    </div>
+</body>
+</html>
